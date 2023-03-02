@@ -49,20 +49,65 @@
 
 
 // オブジェクト
-const person = {
-    name: ['Taro','Momo'],
-    age: 32,
-    gender: 'male',
-    interests: {
-        num1: 'motercycle',
-        num2: 'poker',
-    }
-};
+// const person = {
+//     // プロパティ
+//     name: ['Taro','Momo'],
+//     age: 32,
+//     gender: 'male',
+//     interests: {
+//         num1: 'motercycle',
+//         num2: 'poker',
+//     }, //カンマを忘れない
+//     // メソッド
+//     getName: function() {
+//         console.log(this.name[0] + this.age);
+//     }
+// };
 // person.name = 'Code';
-console.log(person.name);
-console.log(person.name[0]);
-console.log(person.interests.num1);
+// console.log(person.name);
+// console.log(person.name[0]);
+// console.log(person.interests.num1);
 
-person.age = 19; // オブジェクトの中身は変更可能
-console.log(person.age);
+// person.age = 19; // オブジェクトの中身は変更可能
+// console.log(person.age);
+// person.getName();
 
+// ループ
+// const testArray = ['Taro', 'Honda', 'Yamada'];
+// for (let i = 0; i < testArray.length; i++) {    
+//     console.log(testArray[i]);
+// }
+
+// // 他言語との違い 中身を取得するならinでなくofを使う
+// for(let i in testArray){
+//     console.log(i); //要素番号
+//     console.log(testArray[i]);
+// }
+
+// of：中身を取得 値が渡ってくるため変数はvにしている
+// for(let v of testArray){
+//     console.log(v);    
+// }
+
+// CDを買ったかどうか
+const artists = [
+    {
+        id: 1,
+        title: 'AAA',
+        purchased: true,
+    },
+    {
+        id: 2,
+        title: 'DU PUMP',
+        purchased: true,
+    },
+    {
+        id: 3,
+        title: 'EXILE',
+        purchased: false,
+    },
+]
+
+for (let i = 0; i < artists.length; i++) {
+    console.log(artists[i].title);
+}
