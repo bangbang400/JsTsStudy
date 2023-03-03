@@ -108,6 +108,16 @@ const artists = [
     },
 ]
 
-for (let i = 0; i < artists.length; i++) {
-    console.log(artists[i].title);
+// for (let i = 0; i < artists.length; i++) {
+//     console.log(artists[i].title);
+// }
+
+
+for (i of artists){
+    // オブジェクトを取得
+    // console.log(i.id)
+    // 歌手情報を取得
+    if(i.purchased === true){
+        console.log(i.title)
+    }
 }
