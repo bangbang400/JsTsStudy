@@ -90,34 +90,79 @@
 // }
 
 // CDを買ったかどうか
-const artists = [
-    {
-        id: 1,
-        title: 'AAA',
-        purchased: true,
-    },
-    {
-        id: 2,
-        title: 'DU PUMP',
-        purchased: true,
-    },
-    {
-        id: 3,
-        title: 'EXILE',
-        purchased: false,
-    },
-]
+// const artists = [
+//     {
+//         id: 1,
+//         title: 'AAA',
+//         purchased: true,
+//     },
+//     {
+//         id: 2,
+//         title: 'DU PUMP',
+//         purchased: true,
+//     },
+//     {
+//         id: 3,
+//         title: 'EXILE',
+//         purchased: false,
+//     },
+// ]
 
 // for (let i = 0; i < artists.length; i++) {
 //     console.log(artists[i].title);
 // }
 
 
-for (i of artists){
-    // オブジェクトを取得
-    // console.log(i.id)
-    // 歌手情報を取得
-    if(i.purchased === true){
-        console.log(i.title)
-    }
-}
+// for (i of artists){
+//     // オブジェクトを取得
+//     // console.log(i.id)
+//     // 歌手情報を取得
+//     if(i.purchased === true){
+//         console.log(i.title)
+//     }
+// }
+
+
+// アロー関数
+// 関数は一度ファイル全体で認識してから呼ばれると実行される
+// function hello(){
+//     console.log('Hello');
+// }
+
+// 変数に関数を代入する方法をアロー関数という
+// const hello = function(name = 'Tom') {
+//     console.log(name);
+// }
+
+// 省略１  functionを省略できる
+// const hello = (name = 'Tom') => {
+//     console.log(name);
+// }
+
+// 省略２ 関数の中身が１行の時
+// const hello = name => console.log(name);
+
+// 省略２ 引数が２つ以上の時
+// const hello = (name, age) => console.log(name + age);
+
+// const hello = name => {
+//     return 40;
+// };
+// ↑の省略
+// const hello = name => 40;
+
+// console.log(hello());
+// hello('Tom','19');
+
+// let testArray = [1,2,3,4,5];
+
+// forEach メソッドは配列に含まれる要素を先頭から順に取り出してコールバック関数を呼ぶ
+// testArray.forEach( function(value) {
+//     console.log(value);
+// });
+
+// 省略形
+// testArray.forEach( value => console.log(value) );
+
+// コールバック関数
+
